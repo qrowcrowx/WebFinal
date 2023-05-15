@@ -1,0 +1,89 @@
+@import url('https://fonts.cdnfonts.com/css/modern-sans');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "modern-sans", sans-serif;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+nav{
+    background:#222;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover{
+    color:white;
+}
+.logo img{
+    width: 150px;
+    margin-right: 10px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li{
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+@media screen and (max-width: 600px){
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu{
+        margin-top: 15px;
+        display: none;
+    }
+}
+
+.recom1{
+    border: none;
+    appearance: none;
+    background-color: inherit;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.imgcont{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 25px;
+    
+}
