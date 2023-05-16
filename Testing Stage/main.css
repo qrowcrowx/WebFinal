@@ -82,19 +82,31 @@ nav a:hover{
     
 }
 
+
+
 .imgcont{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 25px;
     column-gap: 25px;
-    
+;
 }
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
+.bounce{
+        animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom
+}
+
+.bounce:hover{
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
 
 .slideshow-container {
     text-align: center;
@@ -137,6 +149,11 @@ img {vertical-align: middle;}
   from {opacity: .4} 
   to {opacity: 1}
 }
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+  }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
