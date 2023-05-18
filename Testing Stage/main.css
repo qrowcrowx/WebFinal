@@ -7,7 +7,7 @@
 
 body{
     font-family: "modern-sans", sans-serif;
-    background-image: url(Assets/bg.jpg);
+    background-image: url(Assets/bgcdpr.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -257,12 +257,12 @@ img {vertical-align: middle;}
 
 .desig{
     font-style: italic;
-    color:#717171
+    color: black;
 }
 
 .about{
     margin: 20px 0;
     font-weight: lighter;
-    color:gray
+    color:black;
 }
 
