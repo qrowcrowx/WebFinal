@@ -7,7 +7,7 @@
 
 body{
     font-family: "modern-sans", sans-serif;
-    background-image: url(Assets/bgcdpr.jpg);
+    background-image: url(Assets/TESTBG.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -93,7 +93,6 @@ nav a:hover{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 25px;
     column-gap: 25px;
-;
 }
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
@@ -155,7 +154,7 @@ img {vertical-align: middle;}
 }
 .cardsinfo a{
     text-decoration: none;
-    color:whitesmoke;
+    color:white;
     font-size: 25px;
 }
 
@@ -203,17 +202,27 @@ img {vertical-align: middle;}
     text-align: center;
     background: black;
     margin: 0 auto;
+    height: 100%;
+    max-width: 900px;
+}
+
+.blackcover{
+    padding-top: 50px;
+    text-align: center;
+    background: black;
+    margin: 0 auto;
+    height: 100vh;
     max-width: 900px;
 }
 
 .header{
-    padding-top: 30px;
+    padding-top: 20px;
     display: flex;
     transform: translateY(180%);
     text-align: center;
     justify-content: center;
     color:white;
-    font-size: 50px;
+    font-size: 25px;
     margin: auto;
     line-height: 50px;
 }
@@ -265,4 +274,8 @@ img {vertical-align: middle;}
     font-weight: lighter;
     color:black;
 }
+
+
+
+
 
