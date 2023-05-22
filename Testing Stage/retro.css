@@ -1,3 +1,14 @@
+@font-face {
+  font-family: Retro;
+  src: url(Assets/Retro-font.TTF);
+}
+
+@font-face {
+  font-family: Retro2;
+  src: url(Assets/Retro2.ttf);
+}
+
+
 @import url('https://fonts.cdnfonts.com/css/modern-sans');
 *{
     margin: 0;
@@ -45,10 +56,12 @@ p{
   padding: 1%;
   font-size: 30px;
   color: aliceblue;
+  font-family: Retro2;
 }
 
 h1{
   color: aliceblue;
+  font-family: Retro;
 }
 
   img {
@@ -64,7 +77,7 @@ h1{
 
 .des{
   padding: 1%;
-  margin: 5%;
+  margin: 3%;
   border: solid #63ECDA 10px;
   border-radius: 2rem;
   box-shadow: 0 0 .2rem #fff,
