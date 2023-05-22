@@ -1,0 +1,144 @@
+@font-face {
+  font-family: Retro;
+  src: url(Assets/Retro-font.TTF);
+}
+
+@font-face {
+  font-family: Retro2;
+  src: url(Assets/Retro2.ttf);
+}
+
+
+@import url('https://fonts.cdnfonts.com/css/modern-sans');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("Assets/arcade.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+.strip{
+  max-width: 74%;
+    margin: auto;
+    margin-top: 5px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    height: 100vh;
+}
+
+.first{
+  position: relative;
+  display: flex;
+  justify-content: left;
+  padding: 2%;
+  background-color: black;
+  border: solid #F31AB8 10px;
+  border-radius: 2rem;
+
+  box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #F31AB8,
+    0 0 0.8rem #F31AB8,
+    0 0 2.8rem #F31AB8,
+  inset 0 0 1.3rem #F31AB8; 
+}
+p{
+  padding: 1%;
+  font-size: 30px;
+  color: aliceblue;
+  font-family: Retro2;
+}
+
+h1{
+  color: aliceblue;
+  font-family: Retro;
+}
+
+  img {
+  width: 20%;
+  height: 20%;
+  border-radius: 2rem;
+
+}
+
+.haha{
+  padding: 2%;
+}
+
+.des{
+  padding: 1%;
+  margin: 3%;
+  border: solid #63ECDA 10px;
+  border-radius: 2rem;
+  box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #63ECDA,
+    0 0 0.8rem #63ECDA,
+    0 0 2.8rem #63ECDA,
+  inset 0 0 1.3rem #63ECDA; 
+}
+
+
+#RETRO{
+    margin-top: 10px;
+    padding: 1%;
+    color: white;
+    font-size: 50px;
+}
+
+
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background:#222;
+    padding: 5px 20px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover{
+    color:white;
+}
+.logo img{
+    width: 150px;
+    margin-right: 10px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li{
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.toggle{
+    font-size: 30px;
+    display: none;
+}
