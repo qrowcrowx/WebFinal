@@ -212,7 +212,8 @@ img {vertical-align: middle;}
     background: black;
     margin: 0 auto;
     height: 100vh;
-    max-width: 900px;
+    min-width: 50vh;
+    max-width: 70vh;
     margin-top: 190px;
 }
 
