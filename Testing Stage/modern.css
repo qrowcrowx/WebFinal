@@ -73,8 +73,7 @@ nav a:hover{
     background: black;
     margin: 0 auto;
     height: 100vh;
-    min-width: 50vh;
-    max-width: 150vh;
+    width: 1800px;
     margin-top: 190px;
     position: relative;
 }
