@@ -208,12 +208,10 @@ img {vertical-align: middle;}
 
 .blackcover{
     padding-top: 50px;
-    text-align: center;
     background: black;
     margin: 0 auto;
-    height: 100vh;
-    min-width: 50vh;
-    max-width: 70vh;
+    height: 1900px;
+    width: 1000px;
     margin-top: 190px;
 }
 
