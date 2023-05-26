@@ -90,7 +90,7 @@ nav a:hover{
     display: none;
 }
 
-//BAGONG LAGAY FOR GALLERY
+
 
 .gallery{
   width:100%;
@@ -104,10 +104,7 @@ nav a:hover{
 }
 .gallery ul li a{
   outline:none;
-  display:block;
-  margin:10px;
-  padding: 10px;
-  padding-top: 15px; 
+
   background:transparent no-repeat center center;
 }
 
@@ -119,7 +116,6 @@ nav a:hover{
 }
 
 .gallery ul li a img{
-  display:block;
   border:none;
   border: 0;
   opacity:0.5;
