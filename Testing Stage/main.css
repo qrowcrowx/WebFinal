@@ -82,7 +82,7 @@ nav a:hover{
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 4%;
     width: 100%;
     
 }
@@ -212,7 +212,7 @@ img {vertical-align: middle;}
     margin: 0 auto;
     height: 1900px;
     width: 1000px;
-    margin-top: 190px;
+    margin-top: 150px;
 }
 
 .header{
@@ -275,6 +275,16 @@ img {vertical-align: middle;}
     color:black;
 }
 
+.recomtitle{
+    display: flex;
+    margin: auto;
+    text-align: left;
+    justify-content: left;
+    padding-left: 65px;
+    color: white;
+    font-size: 30px;
+
+}
 
 
 
