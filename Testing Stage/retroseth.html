@@ -33,28 +33,24 @@
         <img class="lblRetroG" src="Assets/RetroTitle2.png" alt="title">
         <div class="gallery">
             <h1 class="Title">
-                <div class="default">
                     <span>Select a Game</span>
-                </div>
-                <div class="hide">
-                    <span id="t1">Mega Man</span>
-                </div>
             </h1>
             <br> <br> <br>
             <ul class="pic">
-                <a href="#" class="first"><img src="Assets/megaman.jpg" alt="a1" ></a>
-                <a href="#"><img src="Assets/pacman.jpg" alt="a2"></a>
-                <a href="#"><img src="Assets/metalslug.jpg" alt="a3"></a>
-                <a href="#"><img src="Assets/supermario.png" alt="a4"></a>
-                <a href="#"><img src="Assets/harvestmoon.png" alt="a5"></a>
+                <a href="#"onmouseenter="Megaman()" onmouseleave="Select()"><img src="Assets/megaman.jpg"
+                        alt="a1"></a>
+                <a href="#" onmouseenter="pacman()" onmouseleave="Select()"><img src="Assets/pacman.jpg" alt="a2"></a>
+                <a href="#" onmouseenter="Metal()" onmouseleave="Select()"><img src="Assets/metalslug.jpg" alt="a3"></a>
+                <a href="#" onmouseenter="Mario()" onmouseleave="Select()"><img src="Assets/supermario.png" alt="a4"></a>
+                <a href="#" onmouseenter="harvest()" onmouseleave="Select()"><img src="Assets/harvestmoon.png" alt="a5"></a>
             </ul>
             <br> <br> <br>
             <ul class="pic2">
-                <a href="#"><img src="Assets/halflife.jpg" alt="a6"></a>
-                <a href="#"><img src="Assets/pokemonemerald.jpg" alt="a7"></a>
-                <a href="#"><img src="Assets/shadowofcolossus.jpg" alt="a8"></a>
-                <a href="#"><img src="Assets/tetris.jpg" alt="a9"></a>
-                <a href="#"><img src="Assets/spaceinvaders.jpg" alt="a10"></a>
+                <a href="#" onmouseenter="half()" onmouseleave="Select()"><img src="Assets/halflife.jpg" alt="a6"></a>
+                <a href="#" onmouseenter="pokemon()" onmouseleave="Select()"><img src="Assets/pokemonemerald.jpg" alt="a7"></a>
+                <a href="#" onmouseenter="Sotc()" onmouseleave="Select()"><img src="Assets/shadowofcolossus.jpg" alt="a8"></a>
+                <a href="#" onmouseenter="Tetris()" onmouseleave="Select()"><img src="Assets/tetris.jpg" alt="a9"></a>
+                <a href="#" onmouseenter="Space()" onmouseleave="Select()"><img src="Assets/spaceinvaders.jpg" alt="a10"></a>
             </ul>
         </div>
     </div>
@@ -74,6 +70,56 @@
         <p style="color: white; font-size: 100px">Click on the X to close this panel.</p>
         <p style="color: white; font-size: 100px">Click on the X to close this panel.</p>
     </div>
+
+    <script>
+        function Select() {
+            let place = document.getElementsByClassName("Title");
+            place[0].innerHTML = "Select a Game";
+        }
+        function Megaman() {
+            let place = document.getElementsByClassName("Title");
+            place[0].innerHTML = "Mega Man";
+        }
+        function pacman() {
+            let place = document.getElementsByClassName("Title");
+            place[0].innerHTML = "PacMan";
+        }
+        function Metal() {
+            let place = document.getElementsByClassName("Title");
+            place[0].innerHTML = "Metal Slug";
+        }
+        function Mario() {
+            let place = document.getElementsByClassName("Title");
+            place[0].innerHTML = "Super Mario";
+        }
+        function harvest() {
+            let place = document.getElementsByClassName("Title");
+            place[0].innerHTML = "Harvest Moon";
+        }
+        function half() {
+            let place = document.getElementsByClassName("Title");
+            place[0].innerHTML = "Half-Life";
+        }
+        function pokemon() {
+            let place = document.getElementsByClassName("Title");
+            place[0].innerHTML = "Pokemon Emerald";
+        }
+        function Sotc() {
+            let place = document.getElementsByClassName("Title");
+            place[0].innerHTML = "Shadow Of The Colossus";
+        }
+        function Tetris() {
+            let place = document.getElementsByClassName("Title");
+            place[0].innerHTML = "Tetris";
+        }
+        function Space() {
+            let place = document.getElementsByClassName("Title");
+            place[0].innerHTML = "Space Invaders";
+        }
+
+
+
+    </script>
 
 
 </body>
