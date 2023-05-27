@@ -82,7 +82,7 @@ nav a:hover{
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 4%;
+    margin-top: 5%;
     width: 100%;
     
 }
@@ -117,17 +117,17 @@ img {vertical-align: middle;}
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 3%;
 }
 
-.numbertext {
+/* .numbertext {
     text-align: center;
   color: black;
   font-size: 12px;
   padding: 8px 12px;
   position: relative;
   top: 0;
-}
+} */
 
 .astri{
     position: relative;
@@ -285,6 +285,26 @@ img {vertical-align: middle;}
     font-size: 30px;
 
 }
+
+.newstitle{
+    display: flex;
+    margin: auto;
+    text-align: left;
+    justify-content: left;
+    color: white;
+    padding-left: 65px;
+    font-size: 30px;
+
+}
+
+.newscont{
+    text-align: left;
+    justify-content: left;
+    margin-top: 40px;
+}
+
+
+
 
 
 
