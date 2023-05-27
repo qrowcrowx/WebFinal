@@ -100,7 +100,7 @@ body {font-family: Verdana, sans-serif;}
 img {vertical-align: middle;}
 
 .bounce{
-        animation-duration: 2s;
+        animation-duration: 1s;
     animation-iteration-count: infinite;
     transform-origin: bottom
 }
