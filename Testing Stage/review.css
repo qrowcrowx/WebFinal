@@ -117,26 +117,33 @@ nav a:hover{
     transition: opacity 2s;
 }
 
+.lmao{
+    color: aliceblue; 
+    font-size: 25; 
+    max-width: 100%; 
+    margin-left: 50px;
+}
+
 .box1:hover {
     flex: 12;
 }
 
-.lmao{
-    color: aliceblue; 
-    font-size: 25; 
-    max-width: 1200px; 
-    margin-left: 50px;
-    opacity: 1;
-    transition: 0.01s ease-in;
-}
 
 .box1:hover + .box2{
     opacity: 0.05;
+    flex:3
 }
 
 .box1:hover + .box2 .lmao{
-    opacity: 0.05;
+    opacity: 0;
+    transition: 0s ease;
 }
+
+.box1:not(:hover) + .box2 .lmao{
+    opacity: 1;
+    transition: 1s ease 0.8s;
+}
+
 /*title start */
 
 .title {
