@@ -28,8 +28,8 @@ html {
 }
 
 .lblRetroG{
-  height: 40%;
-  width: 50%;
+  height: 25%;
+  width: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -112,7 +112,7 @@ nav a:hover{
   display: flex;
   position:relative;
   top: 1%;
-  left: 12%;
+  left: 14%;
   gap: 4%;
 }
 
@@ -120,7 +120,7 @@ nav a:hover{
   display: flex;
   position:relative;
   top: 1%;
-  left: 12%;
+  left: 14%;
   gap: 4%;
 }
 
@@ -163,5 +163,22 @@ nav a:hover{
   margin-top: 1%;
 }
 
+.Title{
+  animation: bounce 5s infinite;
+  font-family: Retro2;
+  font-size: 45px;
+  color: white;
+  text-shadow: 2px 2px #2ce59e;
+}
 
+.bounce{
+  animation-duration: 3s;
+animation-iteration-count: infinite;
+transform-origin: bottom
+}
 
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}

@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* Additional styles for the text */
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+  
+  .glow {
+    
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: blue;
+    filter: blur(40px);
+    pointer-events: none;
+    transition: transform 0.3s ease-out;
+    animation: glowing 5s ease-in-out infinite;
+  }
+  
+  @keyframes glowing {
+    0% {
+        background-color: red;
+        box-shadow: 0 0 10px red;
+    }
+    14.3% {
+        background-color: orange;
+        box-shadow: 0 0 10px orange;
+    }
+    28.6% {
+        background-color: yellow;
+        box-shadow: 0 0 10px yellow;
+    }
+    42.9% {
+      background-color: yellow;
+      box-shadow: 0 0 10px yellow;
+    }
+    57.2% {
+        background-color: rgb(2, 206, 2);
+        box-shadow: 0 0 10px rgb(2, 206, 2);
+    }
+    71.5% {
+        ackground-color: rgb(19, 220, 235);
+        box-shadow: 0 0 10px rgb(19, 220, 235);
+    }
+    85.8% {
+      background-color: rgb(203, 16, 255);
+      box-shadow: 0 0 10px rgb(203, 16, 255);
+    }
+    100% {
+      background-color: red;
+        box-shadow: 0 0 10px red;
+    }
+  }
+
+
+  
+  h1, p {
+    text-align: center;
+  }
+  
+  /* Additional Styles */
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
