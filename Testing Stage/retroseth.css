@@ -182,3 +182,104 @@ transform-origin: bottom
   50%  { transform: translateY(-10px); }
   100% { transform: translateY(0); }
 }
+
+@keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+.synopsis{
+  border:none;
+  border: 0;
+  border-radius: 1rem ;
+  -moz-box-shadow:4px 4px 4px 4px#2ce59e;
+  -webkit-box-shadow:4px 4px 4px 4px #2ce59e;
+  box-shadow:4px 4px 4px 4px #2ce59e;
+  margin-top: 2%;
+  position: absolute;
+  background-color: black;
+  width: 97vh;
+  height: 27vh;
+  z-index: 1;
+  display: none;
+  left: -1.8%;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+
+.synopsisContent{
+  display: flex;
+  margin: 2.5%;
+}
+
+.synopsisContent img{
+  opacity: 1 !important;
+  border-radius: 1rem;
+}
+
+p{
+  font-family: Retro2;
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px #2ce59e;
+}
+
+.des{
+  margin: 2.5%;
+   text-align: left;
+}
+
+.mini{
+  font-family: Retro2;
+  font-size: 45px;
+  color: white;
+  text-shadow: 2px 2px #2ce59e;
+}
+
+.first:hover .synopsis{
+  display: block;
+}
+
+.second:hover .synopsis{
+  display: block;
+}
+
+.third:hover .synopsis{
+  display: block;
+}
+
+.fourth:hover .synopsis{
+  display: block;
+}
+
+.fifth:hover .synopsis{
+  display: block;
+}
+
+.sixth:hover .synopsis{
+  display: block;
+}
+
+.seventh:hover .synopsis{
+  display: block;
+}
+
+.eighth:hover .synopsis{
+  display: block;
+}
+
+.nineth:hover .synopsis{
+  display: block;
+}
+
+.tenth:hover .synopsis{
+  display: block;
+}
+
+.bottom{
+  margin-top: -25% !important;
+}
