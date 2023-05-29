@@ -1,0 +1,62 @@
+@import url('https://fonts.cdnfonts.com/css/modern-sans');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+
+.footer-container {
+  height: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-footer{
+    margin-bottom: 30px;
+}
+
+.logo-footer {
+  margin-right: 100px; /* margin para sa spacing */
+  margin-left: 100px;
+  align-items: center;
+}
+
+.logo-footer img {
+  width: 100px;
+  height: auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
