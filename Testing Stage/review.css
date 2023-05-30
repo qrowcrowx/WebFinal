@@ -15,7 +15,7 @@ a, a:hover{
 }
 
 nav{
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     background:#222;
@@ -86,6 +86,7 @@ nav a:hover{
 }
 
 .sticky-cont {
+    margin-top: 10%;
     position: absolute;
     z-index: 2;
 }
@@ -95,7 +96,8 @@ nav a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right center;
-    height: 100%;
+    background-attachment: fixed;
+    height: 110%;
     width: 100%;
     z-index: -1;
     display: flex;
@@ -103,6 +105,7 @@ nav a:hover{
 }
 
 .box1 {
+    margin-top: 5%;
     height: 100%;
     border: black solid 1px;
     width: 50%;
@@ -117,14 +120,18 @@ nav a:hover{
 
 .box2 {
     background-color: rgb(0, 0, 0);
-    height: 100%;
+    margin-top: 5%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
     border: black solid 1px;
     flex: 4;
-    overflow: hidden;
     transition: opacity 2s;
 }
 
 .lmao {
+    margin: 1%;
+    margin-top: 1%;
     color: aliceblue; 
     font-family: Modern;
     font-size: 20;
@@ -138,6 +145,7 @@ nav a:hover{
     font-size: 30px;
     max-width: 100%; 
     margin-left: 50px;
+    margin-top: 3%;
     text-align: center;
 }
 
@@ -155,6 +163,7 @@ nav a:hover{
 .gifbg{
     object-fit: contain;
     height: 100vh;
+    width: 150vh;
     padding: 0;
     margin: 0;
     opacity: 0;
@@ -168,11 +177,12 @@ nav a:hover{
 }
 
 .box1:hover > .bg-cont img.imgbg{
+    display: none;
     opacity: 0; 
     transition: 1s ease-in-out;
 }
 
-.box1:hover > .bg-cont img.gifbg{
+.box1:hover > .bg-cont .gifbg{
     opacity: 1;
 }
 
