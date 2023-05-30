@@ -238,10 +238,12 @@ nav a:hover{
     transition: opacity 0.5s ease-in-out;
     align-items: center;
     justify-content: center;
+    display: none;
   }
 
   .slider img.active {
     opacity: 1;
+    display: block;
   }
 
   .slider .arrow {
