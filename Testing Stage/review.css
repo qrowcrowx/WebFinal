@@ -1,4 +1,10 @@
+
 @import url('https://fonts.cdnfonts.com/css/modern-sans');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 @font-face {
     font-family: Modern;
     src: url(Assets/Helvetica.ttf);
@@ -7,6 +13,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: "modern-sans", sans-serif;
 }
 
 
@@ -232,7 +242,6 @@ nav a:hover{
     position:relative;
     height: auto; 
     width: 220px;
-    animation: 10s flipme linear infinite;
     margin: 0 -50px;
 }
 

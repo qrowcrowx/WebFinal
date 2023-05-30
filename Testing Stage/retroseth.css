@@ -52,6 +52,7 @@ html {
 }
 
 body{
+  font-family: "modern-sans", sans-serif;
     background-position: center;
     background-repeat: repeat-y;
     background-attachment: fixed;
