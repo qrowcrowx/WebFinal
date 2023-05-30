@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 var images = document.querySelectorAll('.slider img');
 var currentImage = 0;
 var numVisibleImages = 5;
-var slideInterval = setInterval(nextImage, 3000); // Change slide every 2.5 seconds
+var slideInterval = setInterval(nextImage, 5000); // Change slide every 2.5 seconds
 var prevArrow = document.querySelector('.arrow.prev');
 var nextArrow = document.querySelector('.arrow.next');
 var thumbnails = document.querySelectorAll('.thumbnail');
@@ -70,7 +70,7 @@ function resetSlideInterval() {
       nextImage();
     }
     prevButtonClicked = false;
-  }, 3000); // Reset slide interval to 2.5 seconds
+  }, 5000); // Reset slide interval to 2.5 seconds
 }
 
 for (var i = 0; i < thumbnails.length; i++) {
