@@ -9,6 +9,10 @@
     font-family: Modern;
     src: url(Assets/Helvetica.ttf);
 }
+@font-face {
+    font-family: Railee;
+    src: url(Assets/triumviratecgcomp.otf)
+}
 *{
     margin: 0;
     padding: 0;
@@ -102,7 +106,7 @@ nav a:hover{
 }
 
 .box-cont {
-    background: url(Assets/arcadebg.jpg);
+    background: url(Assets/graybg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right center;
@@ -144,7 +148,7 @@ nav a:hover{
     margin-top: 1%;
     color: aliceblue; 
     font-family: Modern;
-    font-size: 20;
+    font-size: 30px;
     max-width: 100%; 
     margin-left: 50px;
 }
@@ -220,11 +224,14 @@ nav a:hover{
 /*title start */
 
 .title {
+    font-family: Railee;
+    color: white;
+    font-size: 20px;
     height: 100px;
     width: 90%;
     padding: 10px;
     margin: 20px;
-    background-color: aliceblue;
+    background-color: #222;
 }
 
 /*title end */
@@ -266,6 +273,35 @@ nav a:hover{
     }
      
 }
+
+.gallery {  
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+ 
+  }
+
+.photo {
+    
+    float: left;
+}
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    filter: drop-shadow(0px 0px 4px white);
+  
+  }
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    color: white;
+  }
+
 /*illust end */
 
 /*
