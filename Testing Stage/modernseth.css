@@ -217,7 +217,84 @@ nav a:hover{
         box-shadow: 0 0 10px red;
     }
   }
-  
+
+  /* image slider */
+  .slider {
+    width: 840px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider img.active {
+    opacity: 1;
+  }
+
+  .slider .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .slider .arrow.prev {
+    left: 10px;
+  }
+
+  .slider .arrow.next {
+    right: 10px;
+  }
+
+  .slider-bar {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .slider-bar .thumbnail {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: filter 0.3s ease-in-out;
+  filter: brightness(30%);
+  }
+
+  .slider-bar .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .slider-bar .thumbnail.active {
+  filter: blur(2px) brightness(100%);
+  }
+
   h1, p {
     text-align: center;
   }
