@@ -25,13 +25,21 @@
     overflow: hidden;
 }
 
+.jongol{
+    position: absolute;
+    margin: 0 auto;
+    margin-left: 32%;
+    
+
+}
+
 .button-box{
     width: 250px;
     height: 35px auto;
     margin: 0 auto;
     margin-top: 30px;
     position: relative;
-    box-shadow: 0 0 20px 9px #ff61241f;
+    box-shadow: 0 0 20px 9px #21011b;
     border-radius: 30px;
     justify-content: center;
     text-align: center;
@@ -54,7 +62,7 @@
     left: 0;
     position: absolute;
     height: 100%;
-    width: 130px;
+    width: 140px;
     background: linear-gradient(to right, #501441, #8e3491);
     border-radius: 30px;
     transition: .5s;
@@ -98,11 +106,9 @@
 }
 
 #register{
- 
     left: 450px;
 
 }
-
 
 a, a:hover{
     text-decoration: none;
@@ -153,7 +159,7 @@ nav a:hover{
 
 .menu li{
 
-    padding: 10px 10px;
+    padding: 15px 15px;
     font-size: 16px;
 }
 
