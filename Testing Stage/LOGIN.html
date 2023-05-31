@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA Compatible" content ="IE=edge"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <link rel="stylesheet" type="text/css" href="footer.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="tts.js"> </script>    
+    </head>
+
+    <nav>
+        <div class="logo">
+            <img src="Assets/logo/kafka.png" alt="logo"></a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html" style="color:whitesmoke">Home</a></li>
+          <li><a href="modernseth.html" style="color:whitesmoke">Modern</a></li>
+          <li><a href="retroseth.html" style="color:whitesmoke">Retro</a></li>
+          <a href="LOGIN.html" button style="color: whitesmoke" >Login</button></a>
+          <div class="TTS">
+          <li><label for="toggleSpeech">Text-To-Speech</label> 
+          <input type="checkbox"  checked onclick="toggleTextToSpeech()">
+          </li>
+          </div>
+          
+        </ul>
+    </nav>
+
+    <body>
+            <div class="center">
+                <div class="form-box">
+                    
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" class="toggle-btn" onclick="login()">LOG IN</button>
+                        <button type="button" class="toggle-btn" onclick="register()">REGISTER</button>
+                    </div>
+                    <img src="Assets/logo/logo-black.png" style="height: 100px; width: 110px" alt="sadsad">
+                          
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User ID" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                  
+                    <button type="submit" class="submit-btn">LOG IN</button>
+                </form>
+
+                <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder="User ID" required>
+                    <input type="email" class="input-field" placeholder="Email ID" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+             
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+            </div>    
+            
+            <script>
+                var x = document.getElementById("login");
+                var y = document.getElementById("register");
+                var z = document.getElementById("btn");
+
+                function register(){
+                    x.style.left = "-400px"; 
+                    y.style.left = "50px"; 
+                    z.style.left = "110px"; 
+                }
+
+                function login(){
+                    x.style.left = "50px"; 
+                    y.style.left = "450px"; 
+                    z.style.left = "0px"; 
+                }
+            </script>
+
+      </body>
+      </html>

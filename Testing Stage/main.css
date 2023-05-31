@@ -12,6 +12,7 @@ body{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    
 }
 
 a, a:hover{
@@ -27,6 +28,13 @@ nav{
     z-index: 1;
     display: flex;
     align-items: center;
+}
+
+
+.TTS{
+    color:whitesmoke;
+    display: inline;
+    
 }
 
 nav a:hover{
@@ -54,8 +62,9 @@ nav a:hover{
 }
 
 .menu li{
-    padding: 15px 10px;
-    font-size: 16px;
+    
+    padding: 15px 15px;
+    font-size: 15px;
 }
 
 .toggle{
@@ -74,6 +83,8 @@ nav a:hover{
         display: none;
     }
 }
+
+
 
 .recom1{
     border: none;
