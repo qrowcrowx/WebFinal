@@ -1,0 +1,42 @@
+.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  padding-bottom: 30px;
+}
+
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.rating label:before {
+  content: '★';
+  color: #ccc;
+  font-size: 40px;
+}
+
+.rating input:checked ~ label:before {
+  color: yellow;
+}
+
+.rating input[type="radio"]:checked ~ label.half:before {
+  content: '★';
+  position: relative;
+  color: yellow;
+  margin-right: -10px;
+  z-index: 2;
+}
