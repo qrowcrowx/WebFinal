@@ -95,8 +95,7 @@ nav a:hover{
 /*top bar end */
 
 .sticky {
-    background-image: linear-gradient(180deg,transparent,black 90%),
-    url(Assets/StarRail/hsrbg.jpeg);
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -110,6 +109,73 @@ nav a:hover{
     border-radius: 25px;
 }
 
+.stickybg{
+    background-image: linear-gradient(180deg,transparent,black 110%),
+    url(Assets/SR.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    height: 630px;
+    width: 400px;
+    z-index: -1;
+    border-radius: 30px;
+    filter: brightness(40%) blur(2px);
+}
+
+.article-card {
+  width: 300px;
+  height: 430px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 300ms;
+  margin-inline: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  backdrop-filter: blur(5px);
+}
+
+
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(168, 168, 168, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.article-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-card .content {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  padding: 30px 20px 20px 20px;
+  height: auto;
+  bottom: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+}
+
+.article-card .date,
+.article-card .title {
+  margin: 0;
+}
+
+.article-card .date {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 4px;
+}
+
+.article-card .title {
+  font-size: 17px;
+  color: #fff;
+}
+
 .sticky-cont {
     margin-top: 10%;
     position: absolute;
@@ -117,8 +183,6 @@ nav a:hover{
 }
 
 .box-cont {
-    background-image: linear-gradient(180deg,transparent,black 80%),
-    url(Assets/StarRail/hsrbgg.jfif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right center;
@@ -176,8 +240,6 @@ nav a:hover{
 }
 
 .box2 {
-    background-image: linear-gradient(180deg,transparent,#202020 40%),
-    url(Assets/StarRail/hsrbg.jpeg);
     background-size: contain;
     margin-top: 5%;
     margin-bottom: 20%;
@@ -185,7 +247,6 @@ nav a:hover{
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
-    border: black solid 1px;
     flex: 4;
     flex-wrap: wrap;
     transition: opacity 2s;
@@ -252,7 +313,7 @@ nav a:hover{
 
 /*title start */
 
-.title {
+.download {
     font-family: Railee;
     color: white;
     font-size: 20px;

@@ -35,7 +35,8 @@
         </div>
 </div>
 
-<div class="box-cont">
+<div class="box-cont" style="background-image: linear-gradient(180deg,transparent,black 80%),
+url(Assets/StarRail/hsrbgg.jfif);"> <!-- palitan image bg sa pinakalikod -->
 <div class="box1">
     <div class="bg-cont" style="object-fit: inherit;">
         <img class="imgbg" src="Assets/Seele.jpg">
@@ -48,8 +49,11 @@
     </div>
     </div>
 </div>
-        
-<div class="box2">
+       
+
+
+<div class="box2" style="background-image: linear-gradient(180deg,transparent,#202020 30%),
+url(Assets/StarRail/hsrbg.jpeg);"> <!-- palitan image bg box2 (yung may text) -->
     <div class="lmao1">
         <h1> "May this Journey Lead us Starward" </h1>
     </div> <br>
@@ -355,17 +359,17 @@
             
             <div class="sticky-cont">
                 <div class="sticky">
-                    <div class="title">
-                        <h1 style="text-align: center; margin: 13px;"> HONKAI STAR RAIL </h1>
+                <div class="stickybg" style="background-image: linear-gradient(180deg,transparent,black 110%),
+                /* url(Assets/SR.jpg);"></div> <!-- palitan yung bg img ng card sa left -->
+                    <div class="article-card">
+                        <div class="content">
+                          <p class="date">Jan 1, 2022</p>
+                          <p class="title">Honkai Star Rail</p>
                     </div>
-
-                    <div class="container">
-                        <div class="illust">
-                            <img class="art" src="Assets/SR.jpg">
-                        </div>
+                        <img src="Assets/SR.jpg" alt="article-cover" />
                     </div>
-
-                    <div class="rating-container">
+                
+                <div class="rating-container">
                     <div class="rating">
                         <!-- lagay niyo checked sa tabi ng disabled para sa rating na gusto -->
                         <input type="radio" id="star5" name="rating" value="5" disabled />
@@ -381,9 +385,10 @@
                       </div>
                     </div>
 
-                    <div class="title">
+                    <div class="download">
                         <h1 style="text-align: center; margin: 20px;"> download </h1>
                     </div>
+                
                 </div>
             </div>    
                     <!-- footer -->
