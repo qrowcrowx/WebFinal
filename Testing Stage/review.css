@@ -24,7 +24,6 @@
   }
 
 body{
-    overflow: hidden;
     font-family: "modern-sans", sans-serif;
 }
 
@@ -96,15 +95,19 @@ nav a:hover{
 /*top bar end */
 
 .sticky {
-    position: -webkit-sticky;
+    background-image: linear-gradient(180deg,transparent,black 90%),
+    url(Assets/StarRail/hsrbg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     position: fixed;
-    background-color: black;
     height: 630px;
     width: 400px;
     float: left;
     margin-inline: 90px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 50px;
+    border-radius: 25px;
 }
 
 .sticky-cont {
@@ -114,7 +117,8 @@ nav a:hover{
 }
 
 .box-cont {
-    background: url(Assets/graybg.png);
+    background-image: linear-gradient(180deg,transparent,black 80%),
+    url(Assets/StarRail/hsrbgg.jfif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right center;
@@ -124,12 +128,13 @@ nav a:hover{
     z-index: -1;
     display: flex;
     position: absolute;
+    overflow: hidden;
+    overscroll-behavior: auto;
 }
 
 .box1 {
     margin-top: 5%;
     height: 100%;
-    border: black solid 1px;
     flex: 2;
     flex-wrap: wrap;
     transition: 1s;
@@ -150,25 +155,35 @@ nav a:hover{
     z-index: 1;
     opacity: 1;
     position: absolute;
-    filter: blur(10px);
+    filter: blur(10px) brightness(70%);
 }
 
 .gifbg{
-    object-fit: contain;
     height: 100%;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin-top: 2%;
+    margin-bottom: 3%;
     opacity: 0;
     z-index: -5;
     position: absolute;
 }
 
+.videobg{
+    width: 100%; 
+    height: 86vh;
+    position: fixed;
+}
+
 .box2 {
-    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(180deg,transparent,#202020 40%),
+    url(Assets/StarRail/hsrbg.jpeg);
+    background-size: contain;
     margin-top: 5%;
+    margin-bottom: 20%;
+    padding-top: 0;
     height: 100%;
-    overflow-y: inherit;
+    overflow-y: scroll;
     overflow-x: hidden;
     border: black solid 1px;
     flex: 4;
@@ -176,6 +191,8 @@ nav a:hover{
     transition: opacity 2s;
     overscroll-behavior-y: auto;
 }
+
+
 
 .lmao {
     margin: 1%;
@@ -213,17 +230,17 @@ nav a:hover{
 }
 
 .box1:hover + .box2{
-    opacity: 0.05;
+    opacity: 0.01;
     flex:3;
     transition: 1s ease-in-out 0.2s;
 }
 
-.box1:hover + .box2 .lmao{
+.box1:hover + .box2 > div{
     opacity: 0;
     transition: 0.2s ease;
 }
 
-.box1:not(:hover) + .box2 .lmao{
+.box1:not(:hover) + .box2 > div{
     opacity: 1;
     transition: 1s ease 0.8s;
 }
@@ -244,6 +261,7 @@ nav a:hover{
     padding: 10px;
     margin: 20px;
     background-color: #222;
+    border-radius: 10px;
 }
 
 /*title end */
@@ -261,6 +279,8 @@ nav a:hover{
     position:relative;
     height: auto; 
     width: 220px;
+    animation: 20s flipme linear infinite;
+    border-radius: 25px;
     margin: 0 -50px;
 }
 
@@ -292,11 +312,9 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     margin-top: 2%;
- 
-  }
+}
 
 .photo {
-    
     float: left;
 }
   
