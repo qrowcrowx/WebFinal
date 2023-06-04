@@ -193,7 +193,7 @@ nav a:hover{
 
 /*download end */
 
-.article-card {
+.game-card {
   width: 300px;
   height: 430px;
   border-radius: 12px;
@@ -209,40 +209,42 @@ nav a:hover{
 }
 
 
-.article-card:hover {
+.game-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 28px rgba(168, 168, 168, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.article-card img {
+.game-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.article-card .content {
+.game-card .content {
   box-sizing: border-box;
   width: 100%;
   position: absolute;
-  padding: 30px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
   height: auto;
   bottom: 0;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+  backdrop-filter: brightness(50%);
+  border-radius: 5px;
 }
 
-.article-card .date,
-.article-card .title {
-  margin: 0;
+.game-card .dev,
+.game-card .title {
+  text-align: center;
 }
 
-.article-card .date {
-  font-size: 12px;
+.game-card .dev {
+  font-size: 15px;
   color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 4px;
+
 }
 
-.article-card .title {
-  font-size: 17px;
+.game-card .title {
+  font-size: 20px;
   color: #fff;
 }
 
