@@ -336,18 +336,22 @@ img {vertical-align: middle;}
     color: white;
     padding-top: 20px;
     margin-left: 5%;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .youtlink{
-    display: flex;
-    margin: auto;
-    justify-content: center;
+    margin-left: 10%;
     color: white;
-    padding-top: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 25px;
+    font-size: 20px;
+}
+
+.blackcont{
+    padding-top: 50px;
+    background: black;
+    margin: 0 auto;
+    height: 1000vh;
+    width: 1000px;
+    margin-top: 150px;
 }
 
 .newscont{
