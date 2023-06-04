@@ -347,40 +347,40 @@ nav a:hover{
 .box1:hover{
     flex: 12;
     filter: blur(0px);
-    transition: 1s ease-in-out 0.75s;
+    transition: 1s ease-in-out 0.5s;
 }
 
 .box1:hover > .bg-cont img.imgbg{
     opacity: 0; 
-    transition: 1s linear 0.75s;
+    transition: 1s linear 0.5s;
     z-index: -1;
 }
 
 .box1:hover > .bg-cont .gifbg{
     opacity: 1;
-    transition: 1s ease-in-out 0.75s;
+    transition: 1s ease-in-out 0.5s;
     z-index: 2;
 }
 
 .box1:hover + .box2{
     opacity: 0.01;
     flex:3;
-    transition: 1s ease-in-out 0.75s;
+    transition: 1s ease-in-out 0.5s;
 }
 
 .box1:hover + .box2 > div{
     opacity: 0;
-    transition: 0.2s ease 0.75s;
+    transition: 0.2s ease 0.5s;
 }
 
 .box1:not(:hover) + .box2 > div{
     opacity: 1;
-    transition: 1s ease 0.75s;
+    transition: 1s ease 0.5s;
 }
 
 .box1:hover ~ .sticky-cont{
     opacity: 0;
-    transition: 0.5s linear 0.75s;
+    transition: 0.5s linear 0.5s;
 }
 
 
