@@ -330,6 +330,26 @@ img {vertical-align: middle;}
 
 }
 
+.youttitle{
+    display: flex;
+    margin: auto;
+    color: white;
+    padding-top: 20px;
+    margin-left: 5%;
+    font-size: 25px;
+}
+
+.youtlink{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    color: white;
+    padding-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 25px;
+}
+
 .newscont{
     text-align: left;
     justify-content: left;
